@@ -16,11 +16,11 @@ const Couples = () => {
 	const totalDays = Math.round((weddingDay - engageDay) / (1000 * 3600 * 24));
 	const percentageCompleted = Math.floor(((totalDays - remainingDays) * 60) / 320)
 	const maxNumOfBlocks = 60
-	// useEffect(() => {
-	// 	if(percentage < percentageCompleted) {
-	// 		setTimeout(() => setPercentage(percentage + 1), 100)
-	// 	}
-	// })
+	useEffect(() => {
+		if(percentage < percentageCompleted) {
+			setTimeout(() => setPercentage(percentage + 1), 100)
+		}
+	})
 	return (
 		<Box>
 			<Text>
