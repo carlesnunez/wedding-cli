@@ -1,15 +1,17 @@
 const React = require("react");
 const PropTypes = require("prop-types");
+const importJsx = require('import-jsx');
 const { Text, Color, Box } = require("ink");
+const Date = importJsx('./Date');
 
 const Couples = () => {
     console.log("This tool was made just for fun, if you have suggestions contact me on tiwtter: @carlesnunez \n\r")
-	return (
+    return (
 		<Text>
             <Text bold>Couples info: </Text>
 			<Color magentaBright>Judith Gallardo</Color>{" & "}
 			<Color greenBright>Carles Núñez</Color>
-            {"\n\r"}
+            {"\n"}
             <Text bold>Place:</Text> Mas d'Osor - Viladrau, Osona
 		</Text>
 	);

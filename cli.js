@@ -9,13 +9,13 @@ const ui = importJsx('./ui');
 
 const cli = meow(`
 	Usage
-	  $ weeding-cli
+	  $ wedding-cli
 
 	Options
 		--about
 
 	Examples
-	  $ weeding-cli --about
+	  $ wedding-cli --about
 `);
 
 const [command] = cli.input; 

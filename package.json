@@ -1,5 +1,5 @@
 {
-	"name": "weeding-cli",
+	"name": "wedding-cli",
 	"version": "0.0.0",
 	"license": "MIT",
 	"bin": "cli.js",
