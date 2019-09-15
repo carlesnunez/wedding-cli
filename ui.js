@@ -6,15 +6,17 @@ const importJsx = require('import-jsx');
 const {Box, Text, Color} = require('ink');
 const Couples = importJsx('./components/Couples');
 const Date = importJsx('./components/Date');
+const SaveTheDate = importJsx('./components/SaveTheDate');
 
 
 const App = ({command}) => {
-	console.log(chalk.green("\r\n __     __     ______     ______     _____     __     __   __     ______        ______     __         __    \r\n\/\\ \\  _ \\ \\   \/\\  ___\\   \/\\  ___\\   \/\\  __-.  \/\\ \\   \/\\ \"-.\\ \\   \/\\  ___\\      \/\\  ___\\   \/\\ \\       \/\\ \\   \r\n\\ \\ \\\/ \".\\ \\  \\ \\  __\\   \\ \\  __\\   \\ \\ \\\/\\ \\ \\ \\ \\  \\ \\ \\-.  \\  \\ \\ \\__ \\     \\ \\ \\____  \\ \\ \\____  \\ \\ \\  \r\n \\ \\__\/\".~\\_\\  \\ \\_____\\  \\ \\_____\\  \\ \\____-  \\ \\_\\  \\ \\_\\\\\"\\_\\  \\ \\_____\\     \\ \\_____\\  \\ \\_____\\  \\ \\_\\ \r\n  \\\/_\/   \\\/_\/   \\\/_____\/   \\\/_____\/   \\\/____\/   \\\/_\/   \\\/_\/ \\\/_\/   \\\/_____\/      \\\/_____\/   \\\/_____\/   \\\/_\/ \r\n                                                                                                            \r\n                                                                            Judith \u221E Carles marriage tool \r\n\r\n\r\n\r\n"))
 	switch(command) {
 		case 'about':
 			return <Couples />
-		case 'date':
+		case 'timeleft':
 			return <Date />
+		case 'save-the-date':
+			return <SaveTheDate />
 	}
 
 	return <Couples />

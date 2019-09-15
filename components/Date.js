@@ -2,6 +2,10 @@ const React = require("react");
 const {useState, useEffect} = require("react");
 const PropTypes = require("prop-types");
 const { Text, Color, Box } = require("ink");
+const importJsx = require('import-jsx');
+const BigText = require('ink-big-text');
+const Center = importJsx('./Center');
+const Divider = require('ink-divider');
 
 const renderProgressBar = percentage => {
 	return Array(percentage).fill(null).map((_, i) => <Box key={i}><Color green >█</Color></Box>)
@@ -22,11 +26,12 @@ const Couples = () => {
 		}
 	})
 	return (
-		<Box>
-			<Text>
-				<Text bold>27 June 2020</Text> - Percentage: {renderProgressBar(percentage)} <Text bold>{percentage}% - Day: {daysSinceEngage}/{remainingDays}</Text>
-			</Text>
-		</Box>
+		<>
+            <Center><BigText font={'chrome'}  text="Timeleft to #judles wedding"/></Center>
+			<Box marginLeft={15}>{renderProgressBar(percentage)}</Box>
+			<Box marginLeft={15}>{renderProgressBar(percentage)}</Box>
+			<Center><Divider title={`${percentage}% - Day: ${daysSinceEngage}/${remainingDays}`} /></Center>
+		</>
 	);
 };
 

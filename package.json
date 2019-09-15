@@ -17,6 +17,8 @@
 	"dependencies": {
 		"import-jsx": "^3.0.0",
 		"ink": "^2.3.0",
+		"ink-big-text": "^1.0.1",
+		"ink-divider": "^2.0.1",
 		"ink-image": "^2.0.0",
 		"ink-progress-bar": "^3.0.0",
 		"meow": "^5.0.0",
